@@ -34,6 +34,13 @@ cd LoopWorkspace
 xed .
 ```
 
+The `xed .` command uses Xcode's command-line helper to open the workspace. If
+`xed` is not installed, you can instead run:
+
+```
+open LoopWorkspace.xcworkspace
+```
+
 ### Input your development team
 
 You should be able to build to a simulator without changing anything. But if you wish to build to a real device, you'll need a developer account, and you'll need to tell Xcode about your team id, which you can find at https://developer.apple.com/.
