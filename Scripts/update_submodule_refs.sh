@@ -5,7 +5,7 @@ projects=(LoopKit:AmplitudeService:dev LoopKit:CGMBLEKit:dev LoopKit:G7SensorKit
 for project in ${projects}; do
   echo "Updating to $project"
   IFS=":" read user dir branch <<< "$project"
-  echo "Updating to $branch on $user/$project"
+  echo "Updating to $branch on $user/$dir"
   cd $dir
   git checkout $branch
   #git branch -D tidepool-sync
