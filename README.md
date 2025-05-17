@@ -43,3 +43,8 @@ Select the LoopConfigOverride file in Xcode's project navigator, uncomment the `
 ### Build
 
 Select the "LoopWorkspace" scheme (not the "Loop" scheme) and Build, Run, or Test.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
