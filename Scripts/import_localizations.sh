@@ -46,9 +46,9 @@ set -o pipefail && time xcodebuild -workspace LoopWorkspace.xcworkspace -scheme 
 
 
 # Apply translations
-foreach file in xliff_in/*.xliff
-  xcodebuild -workspace LoopWorkspace.xcworkspace -scheme "LoopWorkspace" -importLocalizations -localizationPath $file
-end
+for file in xliff_in/*.xliff; do
+  xcodebuild -workspace LoopWorkspace.xcworkspace -scheme "LoopWorkspace" -importLocalizations -localizationPath "$file"
+done
 
 
 # Generate branches, commit and push.
