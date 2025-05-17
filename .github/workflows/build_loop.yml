@@ -44,11 +44,11 @@ jobs:
 
           if [[ $PERMISSIONS =~ "workflow" || $PERMISSIONS == "" ]]; then
             echo "GH_PAT holds workflow permissions or is fine-grained PAT."
-            echo "has_permission=true" >> $GITHUB_OUTPUT # Set WORKFLOW_PERMISSION to false.
-          else 
+            echo "has_permission=true" >> $GITHUB_OUTPUT # Set has_permission output value.
+          else
             echo "GH_PAT lacks workflow permissions."
             echo "Automated build features will be skipped!"
-            echo "has_permission=false" >> $GITHUB_OUTPUT # Set WORKFLOW_PERMISSION to false.
+            echo "has_permission=false" >> $GITHUB_OUTPUT # Set has_permission output value.
           fi
 
       - name: Check for alive branches
